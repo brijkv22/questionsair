@@ -1,0 +1,43 @@
+[
+  {
+    "id": 0,
+    "text": "What is your name?",
+    "type": "text",
+    "required": true,
+    "next": 1
+  },
+  {
+    "id": 1,
+    "text": "What is your age?",
+    "type": "numeric",
+    "required": true,
+    "next": 2
+  },
+  {
+    "id": 2,
+    "text": "What is your favorite color?",
+    "type": "multiple-choice",
+    "options": ["Red", "Blue", "Green"],
+    "required": true,
+    "next": 3
+  },
+  {
+    "id": 3,
+    "text": "Would you like to receive updates?",
+    "type": "multiple-choice",
+    "options": ["Yes", "No"],
+    "required": true,
+    "next": 4,
+    "conditionalNext": {
+      "Yes": 4,
+      "No": 5
+    }
+  },
+  {
+    "id": 4,
+    "text": "What kind of updates would you like?",
+    "type": "text",
+    "required": true,
+    "next": 5
+  }
+]
