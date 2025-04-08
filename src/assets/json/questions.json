@@ -27,7 +27,6 @@
     "type": "multiple-choice",
     "options": ["Yes", "No"],
     "required": true,
-    "next": 4,
     "conditionalNext": {
       "Yes": 4,
       "No": 5
@@ -38,6 +37,12 @@
     "text": "What kind of updates would you like?",
     "type": "text",
     "required": true,
-    "next": 5
+    "next": 6
+  },
+  {
+    "id": 5,
+    "text": "Please give us any suggestions or feedback.",
+    "type": "text",
+    "required": false
   }
 ]
